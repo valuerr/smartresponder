@@ -20,9 +20,12 @@ Usage
 
     >>> import smartresponder
     >>> api = smartresponder.API('my_api_id', 'my_api_secret')
-    >>> subscriber = api.subscribers.list(id='39715947')['list']['elements'][0]
+    >>> print api.subscribers.create(email='tester@test.ru', first_name=u'Valentin Gorbunov', delivery_id='177879')
+    {u'result': 1, u'id': 39727504}
+
+    >>> subscriber = api.subscribers.list(id='39727504')['list']['elements'][0]
     >>> print subscriber['email']
-    test@test.ru
+    tester@test.ru
 
 All API methods that can be called from server should be supported.
 
