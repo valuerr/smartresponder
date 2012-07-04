@@ -1,6 +1,6 @@
-=========
+==============
 smartresponder
-=========
+==============
 
 This is a smartresponder (aka smartresponder.ru)
 python API wrapper. The goal is to support all API methods (current and future)
