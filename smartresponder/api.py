@@ -37,10 +37,7 @@ class SMRError(Exception):
         return self.error['request_params']
 
     def __unicode__(self):
-        return "Error(code = '%s', description = '%s', params = '%s')" % (self.code, self.description, self.params)
-
-    def __str__(self):
-        return "Error(code = '%s', params = '%s')" % (self.code, self.params)
+        return u"Error(code='%s', description='%s', params='%s')" % (self.code, self.description, self.params)
 
 
 def safe_json_loads(data):
